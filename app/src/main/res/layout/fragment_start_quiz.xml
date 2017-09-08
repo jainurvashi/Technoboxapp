@@ -1,0 +1,38 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.ishank.quiz.StartQuiz">
+
+    <!-- TODO: Update blank fragment layout -->
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="60dp"
+        android:text="Max Time 5 Min"
+        android:textSize="20dp"
+        android:textAlignment="center"
+        android:textColor="#3335d7"/>
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:src="@drawable/quiz"
+        android:layout_marginTop="30dp"/>
+    <Button
+        android:id="@+id/startquiz"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:background="#3335d7"
+        android:text="Start Quiz"
+        android:textColor="#fff"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center"/>
+</LinearLayout>
+</FrameLayout>

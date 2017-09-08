@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#717ff2"
+    tools:context="com.example.ishank.quiz.LogIn">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="320dp"
+    android:orientation="vertical"
+    android:background="#FFF"
+   android:layout_marginTop="160dp"
+    android:layout_centerHorizontal="true"
+   >
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="#3335d7"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="8dp">
+        <EditText
+            android:id="@+id/loginusername"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:drawableStart="@drawable/ic_person_black_24dp"
+            android:hint="username"
+            android:drawableLeft="@drawable/ic_person_black_24dp" />
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textColorHint="#3335d7"
+        android:layout_marginBottom="8dp">
+
+        <EditText
+            android:id="@+id/loginpassword"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:drawableLeft="@drawable/ic_lock_outline_black_24dp"
+            android:drawableStart="@drawable/ic_lock_outline_black_24dp"
+            android:hint="password"
+            android:inputType="textPassword"
+           />
+    </android.support.design.widget.TextInputLayout>
+    <TextView
+        android:id="@+id/forgetpassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Forget Password"
+        android:textSize="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:textColor="#3335d7"
+        android:layout_gravity="right"/>
+    <Button
+        android:id="@+id/sign"
+        android:layout_gravity="center"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:background="#3335d7"
+        android:textColor="#fff"
+        android:text="Sign In"
+        android:textSize="20dp"
+        android:layout_marginTop="20dp"
+        />
+    <TextView
+        android:id="@+id/changepassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Change Password"
+        android:textColor="#3335d7"
+        android:textSize="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_gravity="right"/>
+</LinearLayout>
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/book"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/books"/>
+</RelativeLayout>
